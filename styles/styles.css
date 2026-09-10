@@ -1,12 +1,32 @@
+/* Navigation styling */
+nav {
+    background-color: #333333;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 8px 16px;
+    display: block;
+}
+
+/* Heading styling */
+h1 {
+    color: #111111;
+}
+
 /* Limit main width */
 main {
     max-width: 800px;
 }
 
-/* Specific styling for profile image */
+/* Profile image styling */
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Paragraph padding reset */
