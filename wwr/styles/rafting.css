@@ -7,23 +7,26 @@
 :root {
     --primary-color: #005f73;
     --secondary-color: #0a9396;
-    --accent-color: #ee9b00;
-    --text-color: #2b2d42;
+    --accent-color: #ca6702;
+    --text-color: #1d2d44;
     --bg-color: #f8f9fa;
+    --white: #ffffff;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
+    line-height: 1.6;
 }
 
+/* --- HEADER: CSS Grid Layout --- */
 header {
     background-color: var(--primary-color);
-    padding: 1rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
+    padding: 1rem 2rem;
 }
 
 header img {
@@ -31,12 +34,27 @@ header img {
     height: auto;
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+/* --- NAV: CSS Flexbox Layout --- */
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
 }
 
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* --- HERO SECTION --- */
 .hero {
     position: relative;
 }
@@ -52,10 +70,10 @@ nav a {
     top: 20px;
     width: 100%;
     text-align: center;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0;
-    padding: 10px 0;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 12px 0;
+    font-size: 2rem;
 }
 
 .hero article {
@@ -63,67 +81,113 @@ nav a {
     bottom: 20px;
     left: 5%;
     right: 5%;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 15px;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 6px;
     border: 2px solid var(--secondary-color);
 }
 
 .hero article img {
     float: right;
-    width: 50px;
+    width: 60px;
     height: auto;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
+/* --- HISTORY SECTION --- */
 .history {
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .history h2 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.history img {
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.history-content img {
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
     height: auto;
-    display: block;
-    margin: 1rem auto;
+    border-radius: 6px;
 }
 
+/* --- ADVENTURES SECTION --- */
 .adventures {
-    padding: 2rem;
-    max-width: 1000px;
+    padding: 2.5rem 2rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .adventures h2 {
     color: var(--accent-color);
-}
-
-.adventures figure {
-    margin: 1rem 0;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.adventures img {
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+    background-color: var(--white);
+    padding: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-gallery img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
+.adventure-gallery figcaption {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: var(--text-color);
+}
+
+/* --- FOOTER: CSS Flexbox Layout --- */
 footer {
     background-color: var(--primary-color);
-    color: #ffffff;
-    text-align: center;
-    padding: 1.5rem;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.95rem;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 1rem;
 }
 
 footer .socialmedia img {
-    width: 30px;
+    width: 32px;
     height: auto;
-    margin: 0 8px;
+    transition: transform 0.2s ease;
+}
+
+footer .socialmedia img:hover {
+    transform: scale(1.1);
 }
