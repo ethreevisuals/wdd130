@@ -6,8 +6,8 @@
 
 :root {
     --primary-color: #005f73;
-    --secondary-color: #0a9396;
-    --accent-color: #ca6702;
+    --secondary-color: #005c60;
+    --accent-color: #9b4700;
     --text-color: #1d2d44;
     --bg-color: #f8f9fa;
     --white: #ffffff;
@@ -102,7 +102,7 @@ nav a:hover {
 }
 
 .history h2 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     margin-bottom: 1.5rem;
 }
