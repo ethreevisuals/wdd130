@@ -191,3 +191,144 @@ footer .socialmedia img {
 footer .socialmedia img:hover {
     transform: scale(1.1);
 }
+
+/* --- CONTACT PAGE STYLES --- */
+.contact-hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.company-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.info-details h2,
+.employee-section h2,
+.contact-form-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.info-details p {
+    margin-bottom: 0.75rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.employee-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.employee-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.employee-gallery figure {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.employee-gallery figcaption {
+    margin-top: 0.75rem;
+    color: var(--text-color);
+}
+
+.contact-form-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-item label {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.radio-group {
+    gap: 0.5rem;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.checkbox-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-item label {
+    font-weight: normal;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Whitewater Rafting Company</title>
+    <meta name="description"
+      content="Contact Whitewater Rafting Company to plan your river trip. Get address info, view our guide team, or submit an inquiry using our contact form.">
+    <meta name="author" content="Anthony Gelli">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-hero">
+            <h1>Contact Us</h1>
+        </div>
+
+        <section class="company-info">
+            <div class="info-details">
+                <h2>Company Information</h2>
+                <p><strong>Address:</strong> 123 Main Street, Salmon, ID 83467</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+            </div>
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.384729105417!2d-113.89658232348574!3d45.17822597107297!2m3!1f0!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535817bc1033bb7f%3A0x6b899b827e6ebbd9!2sSalmon%2C%20ID%2083467!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                  width="400" height="300" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="employee-section">
+            <h2>Meet Our Team</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Sarah Jenkins - Head River Guide">
+                    <figcaption><strong>Sarah Jenkins</strong><br>Head River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Mike Reynolds - Operations Manager">
+                    <figcaption><strong>Mike Reynolds</strong><br>Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Elena Rostova - Safety Coordinator">
+                    <figcaption><strong>Elena Rostova</strong><br>Safety Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <div class="form-item">
+                    <label for="username">Your Name:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="useremail">Email Address:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+
+                <div class="form-item radio-group">
+                    <p><strong>Purpose of Message:</strong></p>
+                    <label><input type="radio" id="general" name="purpose" value="general" checked>
+                        General Inquiry</label>
+                    <label><input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question</label>
+                    <label><input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion</label>
+                </div>
+
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-item checkbox-item">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2026 ❖ Whitewater Rafting Company ❖ Anthony Gelli</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png"
+                  alt="Facebook Icon"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png"
+                  alt="Twitter Icon"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png"
+                  alt="Instagram Icon"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
